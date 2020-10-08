@@ -1,6 +1,9 @@
 TelnetClient.php
 ================
 
+Update 08.10.2020 - borisuu:
+I've made this a composer package for easier install into other projects. No code changes made.
+
 Telnet client implementation in PHP.
 
 This code is based on https://github.com/ngharo/Random-PHP-Classes/blob/master/Telnet.class.php
@@ -19,9 +22,7 @@ Many things are still wrong (though it was like that in upstream versions too):
 Usage example:
 ---
 ```php
-require_once(__DIR__ . '/TelnetClient.php');
-
-use TelnetClient\TelnetClient;
+use Telnet\TelnetClient;
 
 //Uncomment this to get debug logging
 //TelnetClient::setDebug(true);

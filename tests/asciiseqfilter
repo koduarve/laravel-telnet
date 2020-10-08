@@ -1,7 +1,9 @@
 #! /usr/bin/env php
 <?php
 
-require_once('AnsiAsciiControlParser.php');
+require_once __DIR__ . '/../vendor/autoload.php';
+
+use Telnet\Parser\AnsiAsciiControlParser;
 
 $parser = new AnsiAsciiControlParser();
 
@@ -9,8 +11,8 @@ $f = fopen('php://stdin', 'r');
 
 $parser = new AnsiAsciiControlParser();
 while (false !== ($s = fgets($f))) {
-	$parser->parse($s);
-	print($parser->getTextString());
+    $parser->parse($s);
+    print($parser->getTextString());
 }
 
 fclose($f);
