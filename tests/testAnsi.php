@@ -3,7 +3,7 @@
 
 require_once __DIR__ . '/../vendor/autoload.php';
 
-use Telnet\Parser\AnsiAsciiControlParser;
+use Borisuu\Telnet\Parser\AnsiAsciiControlParser;
 
 $f = fopen('test5.raw', 'rb');
 $s = stream_get_contents($f);

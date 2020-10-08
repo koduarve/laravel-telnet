@@ -179,7 +179,7 @@ function parseArguments()
     }
 }
 
-use Telnet\TelnetClient;
+use Borisuu\Telnet\TelnetClient;
 
 parseArguments();
 

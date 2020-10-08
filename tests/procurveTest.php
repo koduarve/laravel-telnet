@@ -3,7 +3,7 @@
 
 require_once __DIR__ . '/../vendor/autoload.php';
 
-use Telnet\TelnetClient;
+use Borisuu\Telnet\TelnetClient;
 
 $port = 23;
 $host = '192.168.253.1';

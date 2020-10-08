@@ -22,7 +22,7 @@ Many things are still wrong (though it was like that in upstream versions too):
 Usage example:
 ---
 ```php
-use Telnet\TelnetClient;
+use Borisuu\Telnet\TelnetClient;
 
 //Uncomment this to get debug logging
 //TelnetClient::setDebug(true);

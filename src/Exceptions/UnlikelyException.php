@@ -1,6 +1,6 @@
 <?php
 
-namespace Telnet\Exceptions;
+namespace Borisuu\Telnet\Exceptions;
 
 class UnlikelyException extends \ErrorException
 {

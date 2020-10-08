@@ -15,7 +15,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Telnet\\": "src/"
+            "Borisuu\\Telnet\\": "src/"
         }
     }
 }

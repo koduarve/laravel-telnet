@@ -1,8 +1,8 @@
 <?php
 
-namespace Telnet\Exceptions;
+namespace Borisuu\Telnet\Exceptions;
 
-use Telnet\Exceptions\ConnectionException;
+use Borisuu\Telnet\Exceptions\ConnectionException;
 
 class ConnectionTimeoutException extends ConnectionException
 {

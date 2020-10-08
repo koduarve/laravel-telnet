@@ -1,10 +1,10 @@
 <?php
 
-namespace Telnet\Parser;
+namespace Borisuu\Telnet\Parser;
 
-use Telnet\Parser\TextSequence;
-use Telnet\Parser\EscapeSequence;
-use Telnet\Parser\ControlSequence;
+use Borisuu\Telnet\Parser\TextSequence;
+use Borisuu\Telnet\Parser\EscapeSequence;
+use Borisuu\Telnet\Parser\ControlSequence;
 
 class AnsiAsciiControlParser
 {

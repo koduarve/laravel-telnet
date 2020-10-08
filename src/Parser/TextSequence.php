@@ -1,8 +1,8 @@
 <?php
 
-namespace Telnet\Parser;
+namespace Borisuu\Telnet\Parser;
 
-use Telnet\Parser\Sequence;
+use Borisuu\Telnet\Parser\Sequence;
 
 class TextSequence extends Sequence
 {

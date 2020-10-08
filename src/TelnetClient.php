@@ -1,14 +1,14 @@
 <?php
 
-namespace Telnet;
+namespace Borisuu\Telnet;
 
-use Telnet\Exceptions\LoginException;
-use Telnet\Exceptions\UnlikelyException;
-use Telnet\Parser\AnsiAsciiControlParser;
-use Telnet\Exceptions\ConnectionException;
-use Telnet\Exceptions\UnimplementedException;
-use Telnet\Exceptions\NameResolutionException;
-use Telnet\Exceptions\ConnectionTimeoutException;
+use Borisuu\Telnet\Exceptions\LoginException;
+use Borisuu\Telnet\Exceptions\UnlikelyException;
+use Borisuu\Telnet\Parser\AnsiAsciiControlParser;
+use Borisuu\Telnet\Exceptions\ConnectionException;
+use Borisuu\Telnet\Exceptions\UnimplementedException;
+use Borisuu\Telnet\Exceptions\NameResolutionException;
+use Borisuu\Telnet\Exceptions\ConnectionTimeoutException;
 
 class TelnetClient
 {
