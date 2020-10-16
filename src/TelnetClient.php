@@ -689,7 +689,7 @@ class TelnetClient
      */
     private function getMoreData($get_more_data_cb, $userData = null)
     {
-        $data = false;
+        $data = '';
         $endTs = microtime(true) + $this->socket_timeout;
         $a_c = array();
         $c = null;
@@ -710,9 +710,6 @@ class TelnetClient
 
             $is_get_more_data = $this->processStateMachine($a_c);
             if (!$is_get_more_data && count($a_c) > 0) {
-                if ($data === false) {
-                    $data = '';
-                }
                 $new_data = implode($a_c);
                 if (self::$DEBUG) {
                     print("Adding " . (ctype_print($new_data) ? "\"{$new_data}\"" : "(0x" . bin2hex($new_data) . ")") . " to buffer\n");
@@ -722,7 +719,7 @@ class TelnetClient
                 $data .= $new_data;
                 $a_c = array();
             }
-        } while ($is_get_more_data || call_user_func_array($get_more_data_cb, array(count($data), $c, &$userData)));
+        } while ($is_get_more_data || call_user_func_array($get_more_data_cb, array(strlen($data), $c, &$userData)));
 
         return $data;
     }
