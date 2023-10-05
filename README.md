@@ -19,11 +19,11 @@ Things that I know not to work the same anymore:<br>
 Many things are still wrong (though it was like that in upstream versions too):
 - we DONT/WONT Suppress Go Ahead, Echo and Linemode but expect them to work, etc.
   
-- Install
+Install
 
-Via Composer
+- Via Composer
 
-composer require graze/telnet-client
+composer require koduarve/laravel-telnet
 
 Usage example:
 ---
